@@ -1,6 +1,7 @@
 from flask import *
 from database import *
 public=Blueprint('public',__name__)
+
 @public.route('/',methods=['get','post'])
 def index():
 	if 'submit' in request.form:
@@ -13,6 +14,8 @@ def index():
 		insert(q)
 
 	return render_template('index.html')
+
+	
 @public.route('/login_form',methods=['get','post'])
 def login_form():
 	data={}
