@@ -3,6 +3,7 @@ import mysql.connector
 password="12345678"
 # database="databasename"
 database = "yan_trika"
+
 def select(q):
 	cnx = mysql.connector.connect(user="root", password=password, host="localhost", database=database)
 	cur = cnx.cursor(dictionary=True)
@@ -11,6 +12,7 @@ def select(q):
 	cur.close()
 	cnx.close()
 	return result
+
 def update(q):
 	cnx = mysql.connector.connect(user="root", password=password, host="localhost", database=database)
 	cur = cnx.cursor(dictionary=True)
@@ -20,6 +22,7 @@ def update(q):
 	cur.close()
 	cnx.close()
 	return result
+
 def delete(q):
 	cnx = mysql.connector.connect(user="root", password=password, host="localhost", database=database)
 	cur = cnx.cursor(dictionary=True)
@@ -28,6 +31,7 @@ def delete(q):
 	result = cur.rowcount
 	cur.close()
 	cnx.close()
+
 def insert(q):
 	cnx = mysql.connector.connect(user="root", password=password, host="localhost", database=database)
 	cur = cnx.cursor(dictionary=True)
@@ -37,6 +41,7 @@ def insert(q):
 	cur.close()
 	cnx.close()
 	return result
+	
 def insert(q):
 	cnx = mysql.connector.connect(user="root", password=password, host="localhost", database=database)
 	cur = cnx.cursor(dictionary=True)
