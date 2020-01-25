@@ -104,14 +104,17 @@ h1, h2, h3, h4, h5, h6 {
       border-color: #bd1220 !important;
       color: #bd1220 !important;
       background-color: transparent !important; }
-  .btn.btn-outline-primary {
-    color: #bd1220;
-    border-color: #bd1220 !important;
-    background-color: transparent !important; }
+      .btn.btn-outline-primary {
+        color: #bd1220;
+        border-color: #068e81 !important;
+        background-color: transparent !important;
+      font-weight: 500 !important;
+    }
     .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active {
-      border-color: #bd1220 !important;
-      color: #fff !important;
-      background-color: #bd1220 !important; }
+      border-color: #068e81 !important;
+      color: #068e81 !important;
+      font-weight: 500 !important;
+      background-color: #77ff6e !important; }
   .btn.btn-md {
     padding: 14px 30px; }
 
@@ -647,22 +650,24 @@ h1, h2, h3, h4, h5, h6 {
 .section-title .title {
   font-size: 2.2rem; }
 
-.service {
-  padding: 30px;
-  background: #fff;
-  border: 1px solid #eee;
-  border-top: 2px solid #bd1220;
-  -webkit-transition: .3s all ease-in-out;
-  -o-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
-  position: relative;
-  top: 0; }
-  .service:hover, .service:focus {
-    -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
-    border: 1px solid transparent;
-    border-top: 2px solid #bd1220;
-    top: -2px; }
+  .service {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: 2px solid #8dff85;
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    position: relative;
+    top: 0;
+}
+.service:hover, .service:focus {
+  -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+  border: 1px solid transparent;
+  border-top: 2px solid #0e999e;
+  top: -2px;
+}
   .service *:last-child {
     margin-bottom: 0; }
   .service h3 {
@@ -874,3 +879,34 @@ h1, h2, h3, h4, h5, h6 {
     /* Firefox 18- */
     color: #ccc;
     font-style: italic; }
+
+    /*custom css*/
+
+    .banner-text{
+      color: #00cab7 !important;
+      text-shadow: 4px 3px 0px #8dff85 !important;
+    }
+    a {
+      color: #026d63 !important;
+      text-decoration: none;
+      font-weight: 400 !important;
+  }
+  .text-custom{
+    color:#0e999e !important;
+  }
+  .btn-custom {
+    color: #fff !important;
+    font-weight: 500;
+    background-color: #1dd0bf;
+    border-color: #1dd0bf;
+}
+
+@media(max-width:700px){
+  .intro{
+    display: block !important;
+    margin-top: 650px !important;
+  }
+  #what-we-do-section{
+    margin-top: 320px !important;
+  }
+}
