@@ -1,5 +1,5 @@
 from flask import *
-from database import *
+#from database import *
 public=Blueprint('public',__name__)
 
 @public.route('/',methods=['get','post'])
