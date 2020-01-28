@@ -12,6 +12,7 @@ def index():
 
 		q="insert into reg values(null,'%s','%s','%s','%s',curdate())"%(u_name,u_collegename,u_number,u_email)
 		insert(q)
+		
 
 	return render_template('index.html')
 
