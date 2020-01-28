@@ -1,5 +1,5 @@
 from flask import *
-from database import *
+#from database import *
 public=Blueprint('public',__name__)
 
 @public.route('/',methods=['get','post'])
@@ -11,7 +11,7 @@ def index():
 		u_email=request.form['c_email']
 
 		q="insert into reg values(null,'%s','%s','%s','%s',curdate())"%(u_name,u_collegename,u_number,u_email)
-		insert(q)
+		#insert(q)
 
 	return render_template('index.html')
 
@@ -24,7 +24,7 @@ def login_form():
 		username=request.form['user_name']
 		password=request.form['pass_word']
 		q="select * from login where username='%s' and password='%s'"%(username,password)
-		res=select(q)
+		#res=select(q)
 		if res:
 			if res[0]['l_type']=="admin":
 				return redirect(url_for('admin.admin_home'))
