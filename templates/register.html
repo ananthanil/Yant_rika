@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registered | Yantrika </title>
+</head>
+<body>
+	{% if data["success"] == False %}
+		<div>
+			<h2 style="color:red;padding:10px; text-align: center; background: whitesmoke">
+			{{ data["message"] }}
+		</h2>
+		</div>
+	{% else %}
+		<div>
+			<h2 style="color:green;padding:10px; text-align: center; background: whitesmoke">
+				{{ data["message"] }}
+			</h2>
+		</div>
+	{% endif %}
+
+</body>
+</html>
